@@ -1,1 +1,1 @@
-# chat-gpt3-clone
+# gpt-clone

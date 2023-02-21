@@ -1,0 +1,306 @@
+.App {
+  text-align: center;
+  display: flex;
+  background-color: #282c34;
+  color: white;
+  position: absolute;
+  top:0;bottom:0;right:0;left:0;
+}
+
+
+.sidemenu{
+    width: 250px;
+    padding: 10px;
+   
+    background-color: #202123
+}
+
+.side-menu-button span{
+    
+    padding: 0 12px 0 6px;
+    
+    
+}
+
+.chat-input-textarea{
+    background-color: #40414f;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.25em;
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+    
+
+
+}
+
+.chat-input-holder{
+    padding: 0 0 20px 75px;
+    position: fixed;
+    bottom:0;
+    /*left: 0;*/
+    /*right:40px;*/
+    z-index: 2;
+    /*min-width: 10vw;*/
+   /* max-width: 80vw;*/
+    width:75%;
+}
+
+.side-menu-button{
+   
+    padding:15px;
+    border:1px solid white;
+    border-radius: 5px;
+    text-align: left;
+    transition: ease 0.25s all;
+}
+
+.side-menu-button:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.chatbox{
+    flex: 1;
+    background-color:#343541;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*background-attachment: fixed;*/
+    height: 100vh;
+    
+   
+    
+}
+
+.chatbox-scroller{
+ 
+  background-color:#343541;
+  position: absolute;
+  top:0; left:15; bottom:0; right: 0;
+  min-width: 86%;
+  /*background-attachment: fixed;*/
+
+  /*Use media queries to shrink side menu and adjust buttons */
+  z-index: 1;
+  height:100vh;
+  
+ 
+  
+}
+
+.chat-log{
+  
+  text-align: left;
+  
+ 
+
+}
+
+
+.chat-message.chatgpt{
+  background-color: #444654;
+  
+
+}
+
+.chat-message-center{
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+
+  padding-left: 24px; 
+  padding-right: 24px;
+  
+  display: flex;
+
+}
+
+.avatar{
+  background:white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+}
+
+.avatar.chatgpt{
+  background:#0da37f;
+ 
+
+}
+
+.message{
+  padding-top: 10px;
+  padding-left: 15px; 
+  padding-right: 30px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 1544px) {
+    .chat-input-holder{
+      padding: 0 0 20px 75px;
+      position: fixed;
+      bottom:0;
+      /*left: 0;*/
+      /*right:40px;*/
+      z-index: 2;
+      /*min-width: 10vw;*/
+    /* max-width: 80vw;*/
+      width:65%;
+     
+  }
+
+  .chat-input-textarea{
+    background-color: #40414f;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.25em;
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+
+    
+
+
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 1115px) {
+  .chat-input-holder{
+    padding: 0 0 20px 75px;
+    position: fixed;
+    bottom:0;
+    /*left: 0;*/
+    /*right:40px;*/
+    z-index: 2;
+    /*min-width: 10vw;*/
+  /* max-width: 80vw;*/
+    width:50%;
+    
+}
+.chat-input-textarea{
+  background-color: #40414f;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+
+  
+
+
+}
+}
+@media only screen and (max-width: 775px) {
+  .chat-input-holder{
+    padding: 0 0 20px 75px;
+    position: fixed;
+    bottom:0;
+    /*left: 0;*/
+    /*right:40px;*/
+    z-index: 2;
+    /*min-width: 10vw;*/
+  /* max-width: 80vw;*/
+    width:40%;
+    
+    font-size: 1rem;
+}
+.chat-input-textarea{
+  background-color: #40414f;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 0.75em;
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+
+  
+
+
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+  .chat-input-holder{
+    padding: 0 0 20px 10px;
+    position: fixed;
+    bottom:0;
+    /*left: 0;*/
+    /*right:40px;*/
+    z-index: 2;
+    /*min-width: 10vw;*/
+  /* max-width: 80vw;*/
+    width:30%;
+    
+    font-size: 1rem;
+}
+
+.chat-input-textarea{
+  background-color: #40414f;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 0.75em;
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+
+  
+
+
+}
+
+
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
