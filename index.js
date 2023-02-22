@@ -38,7 +38,7 @@ const app = express()
 //app.use(express.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(cors())
-const port = process.env.PORT || 80
+const port = process.env.PORT || 8080
 
 /*
 to attach front end
