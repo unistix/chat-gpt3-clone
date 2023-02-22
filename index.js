@@ -38,7 +38,7 @@ const app = express()
 //app.use(express.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(cors())
-const port = 3080 
+const port = process.env.PORT || 5000
 
 /*
 to attach front end
@@ -71,4 +71,5 @@ app.post('/', async (req, res)=> {
 
 app.listen(port, () =>{
     console.log(`Example app listening at http://localhost:${port}`)
+    
 })
