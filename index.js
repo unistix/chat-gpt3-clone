@@ -41,6 +41,13 @@ app.use(cors({
     origin : "*", // (Whatever your frontend url is) 
     credentials: true, // <= Accept credentials (cookies) sent by the client
   }))
+
+
+  app.use(function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
+  }); //is this the answer?
 const port = process.env.PORT || 8080
 
 /*
