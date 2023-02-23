@@ -38,9 +38,9 @@ const app = express()
 //app.use(express.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(cors({
-    origin : "*", // (Whatever your frontend url is) 
-    credentials: true, // <= Accept credentials (cookies) sent by the client
-  }))
+  origin: ["http://localhost:8080", "http://localhost:3000", "*"],
+  credentials: true
+}))
 
 
   app.use(function(req, res, next) {
