@@ -38,7 +38,7 @@ async function handleSubmit(e){
    
 
   
-    const response = await fetch("http://localhost:8080/", {
+    const response = await fetch("http://ec2-3-101-104-157.us-west-1.compute.amazonaws.com:8080/", {
 
     method: "POST", 
     headers: {
