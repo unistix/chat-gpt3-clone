@@ -250,7 +250,7 @@
     z-index: 2;
     /*min-width: 10vw;*/
   /* max-width: 80vw;*/
-    width:30%;
+    width:88%;
     
     font-size: 1rem;
 }
@@ -270,6 +270,14 @@
 
 
 }
+.sidemenu{
+  display:none;
+  width: 0px;
+  padding: 10px;
+ 
+  background-color: #202123
+}
+
 
 
 }
